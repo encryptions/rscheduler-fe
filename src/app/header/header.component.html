@@ -1,0 +1,21 @@
+<nav class="navbar">
+  <div class="container-fluid">
+    <!-- Site Name -->
+    <div class="navbar-brand-container">
+      <img src="https://i.ibb.co/s2prjnX/reddit-512.webp" alt="Snoo Icon" class="navbar-logo" style="filter: invert(100%);"/>
+      <a class="navbar-brand" href="">rScheduler</a>
+    </div>
+    <!-- Navigation Links -->
+    <div class="navbar-links">
+      <a class="nav-link" href="#" *ngIf="isLoggedIn()">Home</a>
+      <a class="nav-link" href="/scheduler" routerLink="/scheduler" *ngIf="isLoggedIn()">Scheduler</a>
+      <a class="nav-link" href="/accounts" routerLink="/accounts" *ngIf="isLoggedIn()">Accounts</a>
+    </div>
+    <!-- Login/Logout Links -->
+    <div class="navbar-auth">
+      <a class="nav-link" *ngIf="!isLoggedIn()" href="/login" routerLink="/login" >Login</a>
+      <a class="nav-link" *ngIf="isLoggedIn()" href="/logout" routerLink="/logout" >Logout</a>
+    </div>
+  </div>
+</nav>
+<br>

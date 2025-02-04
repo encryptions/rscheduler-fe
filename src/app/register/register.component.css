@@ -1,0 +1,29 @@
+  .card {
+    color: black;
+    background-color: #fff;
+  }
+  
+  .card h3 {
+    color: #333;
+  }
+  
+  .card label {
+    color: #555;
+  }
+  
+  .card input {
+    color: #000;
+  }
+  
+  .card button {
+    color: white;
+    background-color: #007bff;
+  }
+  .border-success {
+    border-color: green !important;
+  }
+  
+  .border-danger {
+    border-color: red !important;
+  }
+  
